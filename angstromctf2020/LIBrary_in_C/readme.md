@@ -13,7 +13,7 @@ We are given a `binary`, `source` and used `libc.so.6`.
 
 ## TLDR;
 
-Format string vulnerability to leak `stack` and `libc` addresses. Overwrite return address to return to `main` for more input opportunities. Overwrite `printf` GOT with `system` and send `/bin/sh\x00` as next payload.
+Format string vulnerability to leak `stack` and `libc` addresses. Overwrite return address to return to `main` for more input opportunities. Overwrite `printf` GOT with `system` and send `/bin/sh\x00` as next payload. (Not the easiest way)
 
 ## Vulnerability
 
